@@ -13,6 +13,7 @@ database sqlite
 create file database.sqlite in /database path
 
 change .env 
+
 DB_CONNECTION=sqlite
 DB_HOST=127.0.0.1
 DB_PORT=3306
