@@ -1,0 +1,4 @@
+<li class="nav-item <?php echo e(Request::is('dogs*') ? 'active' : ''); ?>">
+    <a class="nav-link" href="<?php echo route('dogs.index'); ?>"><i class="nav-icon icon-cursor"></i><span>Dogs</span></a>
+</li>
+<?php /**PATH /Users/sonchai058/Desktop/TU-RAC SOURCE/resources/views/layouts/menu.blade.php ENDPATH**/ ?>

@@ -1,0 +1,265 @@
+<!-- Titlecode Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('TitleCode', 'Titlecode:'); ?>
+
+    <?php echo Form::text('TitleCode', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Codeid Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('CodeId', 'Codeid:'); ?>
+
+    <?php echo Form::text('CodeId', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Nameen Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('NameEn', 'Nameen:'); ?>
+
+    <?php echo Form::text('NameEn', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Lastnameen Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('LastNameEn', 'Lastnameen:'); ?>
+
+    <?php echo Form::text('LastNameEn', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Nameth Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('NameTh', 'Nameth:'); ?>
+
+    <?php echo Form::text('NameTh', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Lastnameth Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('LastNameTh', 'Lastnameth:'); ?>
+
+    <?php echo Form::text('LastNameTh', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Sexcode Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('SexCode', 'Sexcode:'); ?>
+
+    <?php echo Form::text('SexCode', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Address Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    <?php echo Form::label('Address', 'Address:'); ?>
+
+    <?php echo Form::textarea('Address', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Postcodeid Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('PostCodeID', 'Postcodeid:'); ?>
+
+    <?php echo Form::text('PostCodeID', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Usertype Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('UserType', 'Usertype:'); ?>
+
+    <?php echo Form::text('UserType', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Taxid Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('TaxID', 'Taxid:'); ?>
+
+    <?php echo Form::text('TaxID', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Phone1 Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('Phone1', 'Phone1:'); ?>
+
+    <?php echo Form::text('Phone1', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Phone2 Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('Phone2', 'Phone2:'); ?>
+
+    <?php echo Form::text('Phone2', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Accountname Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('AccountName', 'Accountname:'); ?>
+
+    <?php echo Form::text('AccountName', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Officetype Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('OfficeType', 'Officetype:'); ?>
+
+    <?php echo Form::text('OfficeType', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Officecode Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('OfficeCode', 'Officecode:'); ?>
+
+    <?php echo Form::text('OfficeCode', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Officename Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('officeName', 'Officename:'); ?>
+
+    <?php echo Form::text('officeName', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Accchartid Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('AccChartID', 'Accchartid:'); ?>
+
+    <?php echo Form::number('AccChartID', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Datetimeadd Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('DateTimeAdd', 'Datetimeadd:'); ?>
+
+    <?php echo Form::text('DateTimeAdd', null, ['class' => 'form-control','id'=>'DateTimeAdd']); ?>
+
+</div>
+
+<?php $__env->startSection('scripts'); ?>
+   <script type="text/javascript">
+           $('#DateTimeAdd').datetimepicker({
+               format: 'YYYY-MM-DD HH:mm:ss',
+               useCurrent: true,
+               icons: {
+                   up: "icon-arrow-up-circle icons font-2xl",
+                   down: "icon-arrow-down-circle icons font-2xl"
+               },
+               sideBySide: true
+           })
+       </script>
+<?php $__env->stopSection(); ?>
+
+<!-- Useradd Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('UserAdd', 'Useradd:'); ?>
+
+    <?php echo Form::number('UserAdd', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Datetimeupdate Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('DateTimeUpdate', 'Datetimeupdate:'); ?>
+
+    <?php echo Form::text('DateTimeUpdate', null, ['class' => 'form-control','id'=>'DateTimeUpdate']); ?>
+
+</div>
+
+<?php $__env->startSection('scripts'); ?>
+   <script type="text/javascript">
+           $('#DateTimeUpdate').datetimepicker({
+               format: 'YYYY-MM-DD HH:mm:ss',
+               useCurrent: true,
+               icons: {
+                   up: "icon-arrow-up-circle icons font-2xl",
+                   down: "icon-arrow-down-circle icons font-2xl"
+               },
+               sideBySide: true
+           })
+       </script>
+<?php $__env->stopSection(); ?>
+
+<!-- Userupdate Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('UserUpdate', 'Userupdate:'); ?>
+
+    <?php echo Form::number('UserUpdate', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Tsdatetimeupdate Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('tsDateTimeUpdate', 'Tsdatetimeupdate:'); ?>
+
+    <?php echo Form::text('tsDateTimeUpdate', null, ['class' => 'form-control','id'=>'tsDateTimeUpdate']); ?>
+
+</div>
+
+<?php $__env->startSection('scripts'); ?>
+   <script type="text/javascript">
+           $('#tsDateTimeUpdate').datetimepicker({
+               format: 'YYYY-MM-DD HH:mm:ss',
+               useCurrent: true,
+               icons: {
+                   up: "icon-arrow-up-circle icons font-2xl",
+                   down: "icon-arrow-down-circle icons font-2xl"
+               },
+               sideBySide: true
+           })
+       </script>
+<?php $__env->stopSection(); ?>
+
+<!-- Tsuserupdate Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('tsUserUpdate', 'Tsuserupdate:'); ?>
+
+    <?php echo Form::number('tsUserUpdate', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Orgid Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('OrgID', 'Orgid:'); ?>
+
+    <?php echo Form::number('OrgID', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Grpid Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('GrpID', 'Grpid:'); ?>
+
+    <?php echo Form::number('GrpID', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Allow Field -->
+<div class="form-group col-sm-6">
+    <?php echo Form::label('Allow', 'Allow:'); ?>
+
+    <?php echo Form::text('Allow', null, ['class' => 'form-control']); ?>
+
+</div>
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    <?php echo Form::submit('Save', ['class' => 'btn btn-primary']); ?>
+
+    <a href="<?php echo route('customers.index'); ?>" class="btn btn-default">Cancel</a>
+</div>
+<?php /**PATH C:\xampp7\htdocs\tutac\resources\views/customers/fields.blade.php ENDPATH**/ ?>

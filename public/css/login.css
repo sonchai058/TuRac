@@ -1,0 +1,16 @@
+html,body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: linear-gradient(to right top, #051937, #144c63, #4b8386, #93baa8, #e5f0d3);
+}
+
+.card.p-4 {
+	color: #E5F0D3;
+	background-color: rgba(169, 202, 236, 0.2);
+}
+input[type='email'],input[type='password'] {
+	background-color: rgba(255,255,255,0.1);
+}

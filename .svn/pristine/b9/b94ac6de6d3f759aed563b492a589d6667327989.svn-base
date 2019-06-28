@@ -1,0 +1,37 @@
+<div class="container">
+        <?php if(session('success')): ?>
+            <div class="notice notice-success">
+                <strong>Success! </strong><?php echo e(session('success')); ?>
+
+            </div>
+        <?php endif; ?>
+        <?php if(session('error')): ?>
+            <div class="notice notice-success">
+                <strong>Error! </strong><?php echo e(session('error')); ?>
+
+            </div>
+        <?php endif; ?>
+    </div>
+    <style type="text/css">
+        .notice {
+            padding: 15px;
+            background-color: #fafafa;
+            border-left: 6px solid #7f7f84;
+            margin-bottom: 10px;
+            -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+        }
+        .notice-success {
+            border-color: #80D651;
+        }
+        .notice-success>strong {
+            color: #80D651;
+        }
+        .notice-danger {
+            border-color: #d73814;
+        }
+        .notice-danger>strong {
+            color: #d73814;
+        }
+    </style><?php /**PATH C:\xampp7\htdocs\tutac\resources\views/partials/message.blade.php ENDPATH**/ ?>

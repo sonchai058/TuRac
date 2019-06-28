@@ -1,0 +1,12 @@
+<?php $__env->startSection('content'); ?>
+  <div class="container-fluid">
+        <div class="animated fadeIn">
+             <div class="row">
+
+            </div>
+        </div>
+    </div>
+</div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/sonchai058/Desktop/TU-RAC SOURCE/resources/views/home.blade.php ENDPATH**/ ?>

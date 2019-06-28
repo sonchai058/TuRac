@@ -1,0 +1,61 @@
+<?php $__env->startSection('content'); ?>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="<?php echo route('accountCharts.index'); ?>">ผังบัญชี</a>
+        </li>
+        <li class="breadcrumb-item active">ข้อมูลบัญชี</li>
+    </ol>
+    <div class="container-fluid">
+        <div class="animated fadeIn">
+             <?php echo $__env->make('flash::message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+             <?php echo $__env->make('coreui-templates::common.errors', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            
+                <?php echo $__env->make('account_charts.search', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            
+
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row ">
+                        <div class="col-md-8">
+                                 <a class=" btn btn-info m-1" href="<?php echo route('accountCharts.create'); ?>"><i class="icofont-plus-circle"></i> สร้างผังบัญชี</a>
+                                <a class=" btn btn-warning m-1" href="<?php echo route('accountCharts.create'); ?>"><i class="icofont-ui-edit"></i> แก้ไขผังบัญชี</a>
+                                <a class=" btn btn-danger m-1" href="<?php echo route('accountCharts.create'); ?>"><i class="icofont-ui-delete"></i> ลบข้อมูล</a>
+                            </div>
+                        <div class="col-md-4 text-right">
+                            <a class=" btn btn-info " href="#"><i class="icofont-chart-histogram"></i> กรองรายงาน</a>
+                            <a class=" btn btn-info  " href="#"> excel</a>
+                            
+                        </div>
+                    </div>
+
+                    <?php echo $__env->make('account_charts.index_tree', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                    <div class="pull-right mr-3">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mt-5">
+                        <div class="card">
+                            <div class="p-3 text-center"><b>ข้อมูลบัญชี</b></div>
+                            <div class="card-body">
+                                    <?php echo Form::open(['route' => 'accountCharts.store']); ?>
+
+                                    
+                                        <?php echo $__env->make('account_charts.fields', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                    <?php echo Form::close(); ?>
+
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+         </div>
+    </div>
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp7\htdocs\tutac\resources\views/account_charts/create.blade.php ENDPATH**/ ?>

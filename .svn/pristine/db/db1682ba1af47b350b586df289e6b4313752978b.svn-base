@@ -1,0 +1,99 @@
+<!-- Cm Userid Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_UserID', 'Cm Userid:'); ?>
+
+    <p><?php echo $customers->cm_UserID; ?></p>
+</div>
+
+<!-- Cm Titlecode Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_TitleCode', 'Cm Titlecode:'); ?>
+
+    <p><?php echo $customers->cm_TitleCode; ?></p>
+</div>
+
+<!-- Cm Name Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_Name', 'Cm Name:'); ?>
+
+    <p><?php echo $customers->cm_Name; ?></p>
+</div>
+
+<!-- Cm Lastname Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_Lastname', 'Cm Lastname:'); ?>
+
+    <p><?php echo $customers->cm_Lastname; ?></p>
+</div>
+
+<!-- Cm Sexcode Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_SexCode', 'Cm Sexcode:'); ?>
+
+    <p><?php echo $customers->cm_SexCode; ?></p>
+</div>
+
+<!-- Cm Address Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_Address', 'Cm Address:'); ?>
+
+    <p><?php echo $customers->cm_Address; ?></p>
+</div>
+
+<!-- Cm Postcodeid Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_PostCodeID', 'Cm Postcodeid:'); ?>
+
+    <p><?php echo $customers->cm_PostCodeID; ?></p>
+</div>
+
+<!-- Cm Datetimeadd Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_DateTimeAdd', 'Cm Datetimeadd:'); ?>
+
+    <p><?php echo $customers->cm_DateTimeAdd; ?></p>
+</div>
+
+<!-- Cm Useradd Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_UserAdd', 'Cm Useradd:'); ?>
+
+    <p><?php echo $customers->cm_UserAdd; ?></p>
+</div>
+
+<!-- Cm Datetimeupdate Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_DateTimeUpdate', 'Cm Datetimeupdate:'); ?>
+
+    <p><?php echo $customers->cm_DateTimeUpdate; ?></p>
+</div>
+
+<!-- Cm Userupdate Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_UserUpdate', 'Cm Userupdate:'); ?>
+
+    <p><?php echo $customers->cm_UserUpdate; ?></p>
+</div>
+
+<!-- Cm Tsdatetimeupdate Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_tsDateTimeUpdate', 'Cm Tsdatetimeupdate:'); ?>
+
+    <p><?php echo $customers->cm_tsDateTimeUpdate; ?></p>
+</div>
+
+<!-- Tsuserupdate Field -->
+<div class="form-group">
+    <?php echo Form::label('tsUserUpdate', 'Tsuserupdate:'); ?>
+
+    <p><?php echo $customers->tsUserUpdate; ?></p>
+</div>
+
+<!-- Cm Allow Field -->
+<div class="form-group">
+    <?php echo Form::label('cm_Allow', 'Cm Allow:'); ?>
+
+    <p><?php echo $customers->cm_Allow; ?></p>
+</div>
+
+<?php /**PATH C:\xampp7\htdocs\tutac\resources\views/customers/show_fields.blade.php ENDPATH**/ ?>

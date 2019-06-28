@@ -1,0 +1,75 @@
+<?php $__env->startSection('content'); ?>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="<?php echo route('accountCharts.index'); ?>">ผังบัญชี</a>
+        </li>
+        <li class="breadcrumb-item active">ข้อมูลบัญชี</li>
+    </ol>
+    <div class="container-fluid">
+        <div class="animated fadeIn">
+             <?php echo $__env->make('flash::message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+             <span class="pull-left">
+                <a href="<?php echo route('accountCharts.index'); ?>" class=" btn btn-info btn-lg active btn-header">ผังบัญชี Tu-Acc</a>
+                <a  href="<?php echo route('accountChartsTu.index'); ?>" class=" btn btn-info btn-lg  btn-header">ผังบัญชี มธ</a>
+            </span>
+                
+            <span class="pull-right">
+                <strong style="float:right">ปีงบประมาณ: 2562</strong> 
+            </span>
+            <hr>
+       
+         
+            <div class="row">
+                <div class="col-md-12" id="main-index">
+                 
+                    
+                    <div class="row ">
+                        <div class="col-md-7 col-sm-6">
+                                
+                                <?php echo $__env->make('account_charts.search', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                
+                              
+                                
+                            
+                            </div>
+                        <div class="col-md-5 text-right col-sm-6">
+                            <a id="acc_create" class=" btn  btn-create" href="#"><span> <img src="<?php echo e(url('/img/icon/plus.png')); ?>" alt=""></span> เพิ่มข้อมูล</a>
+                            <a class=" btn  btn-filter " data-toggle="modal" data-target="#ModalReport" ><span> <img src="<?php echo e(url('/img/icon/rising.png')); ?>" alt=""></span> กรองรายงาน</a>
+                            <a class="" href="<?php echo e(url('accTuAcc/export')); ?>"><span> <img src="<?php echo e(url('/img/icon/excel.png')); ?>" alt=""></span></a>
+                            
+                        </div>
+                    </div>
+
+                    <?php echo $__env->make('account_charts.index_tree', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                    <br/>
+                    <div class="pull-right mr-3">
+                        
+                    </div>
+                 
+                 
+                </div>
+              
+                <div class="col-md-4" id="main-info">
+                    <div class="collapse" id="acc_data">
+                        <div class="mt-5">
+                            <div class="card">
+                                <div class="p-3 text-center"><b>ข้อมูลบัญชี</b></div>
+                                <div class="card-body">
+                                    <form id="acc_form">
+                                        <?php echo $__env->make('account_charts.fields', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+         
+         </div>
+    </div>
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp7\htdocs\tutac\resources\views/account_charts/index.blade.php ENDPATH**/ ?>
