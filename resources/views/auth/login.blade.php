@@ -32,8 +32,10 @@
                     <div class="card-body">
                         <form method="post" action="{{ url('/login') }}">
                             {!! csrf_field() !!}
-                            <h1 align="center"><img width="50%" class="rounded" src="{{asset('img/stats-icon.png')}}"></h1>
-                            <p align="center" class="text-default">Sign In to turac account</p>
+                            <h1 align="center"><img width="45%" class="rounded" src="{{asset('img/stats-icon.png')}}"></h1>
+                            <p align="center" class="text-default">ระบบสารสนเทศเพื่อการบันทึกบัญชี v 1.0
+                                <h2 align="center" style="margin-top:-8px; color:#174057">Sign In</h2></p>
+
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
@@ -41,7 +43,7 @@
                                     </span>
                                 </div>
                                 <input type="email" class="form-control {{ $errors->has('email')?'is-invalid':'' }}" name="email" value="{{ old('email') }}"
-                                       placeholder="Email" autofocus="">
+                                       placeholder="Username" autofocus="">
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('email') }}</strong>
@@ -89,6 +91,7 @@
                 </div>
                 -->
             </div>
+            <h6 align="center" style="margin-top: 2px;color:#fff; font-size: 11px">&copy; 2019 สำนักงานศูนย์วิจัยและให้คำปรึกษาแห่งมหาวิทยาลัยธรรมศาสตร์</h6>
         </div>
     </div>
 </div>

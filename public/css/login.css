@@ -4,7 +4,8 @@ html,body {
 }
 
 body {
-	background-image: linear-gradient(to right top, #051937, #144c63, #4b8386, #93baa8, #e5f0d3);
+	#background-image: linear-gradient(to right top, #051937, #144c63, #4b8386, #93baa8, #e5f0d3);
+    background-image: linear-gradient(to right top, #237080, #307e8f, #3d8d9e, #4a9cad, #56abbc, #5cb5bf, #65bfc2, #70c9c3, #84cfb5, #9ed3a8, #bad59d, #d8d698);
 }
 
 .card.p-4 {
